@@ -8,8 +8,8 @@
 <title>数据绑定</title>
 </head>
 <body>
-	<form:form modelAttribute="">
-	
+	<form:form modelAttribute="user">
+		用户名：<form:input path="name"/>
 	</form:form>
 </body>
 </html>
