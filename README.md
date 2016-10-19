@@ -18,4 +18,12 @@ springmvc中标签应用
 				}
 2. input标签
 	1. path：form表单的modelAttribute的对象的属性，支持OGNL表达式
-2. 
+
+			<form:input path="name"/>
+	2. password、hidden、textarea、checkbox、radiobutton、errors使用方式及重要属性和input一致
+2. checkboxes:显示多个复选框
+	1. path：modelAttriute中回显的的对象属性-->**绑定的数据来源**
+	2. items:用户**生成复选框的数据来源**(来源于model中)
+
+			别名：<form:checkboxes items="${alias }" path="alias"/>
+	1. radiobuttons、select、options使用方式及重要属性和checkboxes一致

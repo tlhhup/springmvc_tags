@@ -10,7 +10,8 @@ public class User implements Serializable {
 	private int id;
 	private String name;
 	private String address;
-	private Date birthday=new Date();
+	private Date birthday = new Date();
+	private String alias;
 
 	public int getId() {
 		return id;
@@ -42,6 +43,14 @@ public class User implements Serializable {
 
 	public void setBirthday(Date birthday) {
 		this.birthday = birthday;
+	}
+
+	public String getAlias() {
+		return alias;
+	}
+
+	public void setAlias(String alias) {
+		this.alias = alias;
 	}
 
 }

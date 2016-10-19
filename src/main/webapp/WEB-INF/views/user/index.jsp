@@ -10,6 +10,7 @@
 <body>
 	<form:form modelAttribute="user">
 		用户名：<form:input path="name"/>
+		别名：<form:checkboxes items="${alias }" path="alias"/>
 	</form:form>
 </body>
 </html>
